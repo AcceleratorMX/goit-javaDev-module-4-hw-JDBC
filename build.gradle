@@ -14,7 +14,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation 'com.h2database:h2:2.1.214'
     compileOnly 'org.projectlombok:lombok:1.18.26'
-
+    annotationProcessor 'org.projectlombok:lombok:1.18.26'
 }
 
 test {

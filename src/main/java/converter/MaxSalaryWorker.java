@@ -5,12 +5,11 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class MaxProjectsClient {
+public class MaxSalaryWorker {
     private String name;
-    private int projectCount;
-
+    private int salary;
     @Override
     public String toString() {
-        return "name='" + name + '\'' + " | projectCount=" + projectCount + "\n";
+        return "name=" + name + " | salary=" + salary + "\n";
     }
 }

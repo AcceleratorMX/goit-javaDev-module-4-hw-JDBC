@@ -1,4 +1,3 @@
---worker
 
 INSERT INTO worker (name, birthday, level, salary)
 VALUES ('John Doe', '1995-02-10', 'Trainee', 800),
@@ -12,17 +11,12 @@ VALUES ('John Doe', '1995-02-10', 'Trainee', 800),
        ('David Kim', '1991-09-03', 'Middle', 2800),
        ('Lisa Su', '1986-11-22', 'Senior', 6000);
 
-
---client
-
 INSERT INTO client (name)
 VALUES ('Arasaka Corporation'),
        ('Militech International Armaments'),
        ('Night Corp'),
        ('Biotechnica'),
        ('Trauma Team'); 
-
---project
 
 ALTER TABLE project ADD CONSTRAINT duration CHECK (DATEDIFF(MONTH, start_date, finish_date) BETWEEN 1 AND 100);
 
@@ -38,8 +32,6 @@ VALUES (1, '2022-01-01', '2022-05-01'),
        (4, '2022-09-01', '2023-03-01'),
        (5, '2022-10-01', '2024-04-01'),
        (3, '2022-07-01', '2025-12-01');  
-
---project_worker
 
 INSERT INTO project_worker (PROJECT_ID, WORKER_ID)
 VALUES (1, 1),

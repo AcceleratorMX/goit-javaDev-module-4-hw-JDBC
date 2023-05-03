@@ -6,8 +6,12 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
 public class ProjectPrice {
-    private String name;
+    private String id;
     private int price;
+
+    @Override
+    public String toString() {
+        return "id='" + id + '\'' + " | price=" + price + "\n";
+    }
 }

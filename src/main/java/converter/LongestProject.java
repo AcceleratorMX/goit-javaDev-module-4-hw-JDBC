@@ -6,8 +6,12 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
 public class LongestProject {
     private Integer id;
     private int monthCount;
+
+    @Override
+    public String toString() {
+        return "id=" + id + " | monthCount=" + monthCount;
+    }
 }
